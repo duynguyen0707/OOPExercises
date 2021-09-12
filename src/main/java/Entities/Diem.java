@@ -1,0 +1,63 @@
+package Entities;
+
+import java.util.Scanner;
+
+public class Diem {
+    private int x, y;
+
+    public int getX() {
+        return x;
+    }
+
+
+    public int getY() {
+        return y;
+    }
+
+    public void setX(int x) {
+        this.x = x;
+    }
+
+    public void setY(int y) {
+        this.y = y;
+    }
+
+    public Diem(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    public Diem() {
+        this.x = 0;
+        this.y = 0;
+    }
+
+    public void nhapToaDoDiem() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("nhập tọa độ điểm X: ");
+        int diemx = sc.nextInt();
+        this.x = diemx;
+        System.out.println("nhập tọa độ điểm :Y ");
+        int diemy = sc.nextInt();
+        this.y = diemy;
+    }
+
+    public double khoangCachAB(Diem another) {
+        double ds = 0;
+        double diemA = (double) Math.pow(another.x - this.x, 2);
+        double diemB = (double) Math.pow(another.y - this.y, 2);
+//        System.out.println("diem B: " + diemB);
+        ds = (double) Math.sqrt(diemA + diemB);
+        // System.out.println("Khoảng cách AB:" + ds);
+        return ds;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuffer sb = new StringBuffer("Diem{");
+        sb.append("x=").append(x);
+        sb.append(", y=").append(y);
+        sb.append('}');
+        return sb.toString();
+    }
+}
