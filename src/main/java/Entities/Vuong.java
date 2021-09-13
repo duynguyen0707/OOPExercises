@@ -15,8 +15,8 @@ public class Vuong extends Hinh {
     }
 
     @Override
-    public void nhapThongTinHinh() {
-        super.nhapThongTinHinh();
+    public void nhapThongTinDat() {
+        super.nhapThongTinDat();
         Scanner sc = new Scanner(System.in);
         System.out.println("Nhập chiều rộng: ");
         int chieuRong = sc.nextInt();

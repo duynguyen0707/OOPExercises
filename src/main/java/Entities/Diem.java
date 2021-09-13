@@ -5,23 +5,6 @@ import java.util.Scanner;
 public class Diem {
     private int x, y;
 
-    public int getX() {
-        return x;
-    }
-
-
-    public int getY() {
-        return y;
-    }
-
-    public void setX(int x) {
-        this.x = x;
-    }
-
-    public void setY(int y) {
-        this.y = y;
-    }
-
     public Diem(int x, int y) {
         this.x = x;
         this.y = y;
@@ -46,9 +29,7 @@ public class Diem {
         double ds = 0;
         double diemA = (double) Math.pow(another.x - this.x, 2);
         double diemB = (double) Math.pow(another.y - this.y, 2);
-//        System.out.println("diem B: " + diemB);
         ds = (double) Math.sqrt(diemA + diemB);
-        // System.out.println("Khoảng cách AB:" + ds);
         return ds;
     }
 

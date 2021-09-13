@@ -16,12 +16,12 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
-//        Diem d = new Diem(0,1);
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("Nhập vào số mảnh đất cần nhập: ");
+        System.out.println("Nhập số mảnh đất cần mua: ");
         int n = sc.nextInt();
         Hinh[] list = new Hinh[n];
+
         Hinh.nhapDanhSachDat(list);
 
         Hinh.xuatDanhSachDat(list);
@@ -35,6 +35,5 @@ public class App {
         Hinh.tongTien(list, giaDat);
 
     }
-
 
 }

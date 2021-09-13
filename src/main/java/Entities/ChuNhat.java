@@ -16,9 +16,9 @@ public class ChuNhat extends Hinh {
 
     }
 
-    public void nhapThongTinHinh() {
+    public void nhapThongTinDat() {
         Scanner sc = new Scanner(System.in);
-        super.nhapThongTinHinh();
+        super.nhapThongTinDat();
         System.out.println("Nhập chiều dài: ");
         int chieuDai = sc.nextInt();
         this.chieuDai = chieuDai;

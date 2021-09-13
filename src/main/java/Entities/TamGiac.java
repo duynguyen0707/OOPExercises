@@ -41,7 +41,7 @@ public class TamGiac extends Hinh {
 //        super.nhapThongTinHinh();
 //    }
 
-    public void nhapThongTinHinh() {
+    public void nhapThongTinDat() {
         System.out.println("Nhập điểm D1: ");
         Diem d1 = new Diem();
         d1.nhapToaDoDiem();
@@ -69,7 +69,6 @@ public class TamGiac extends Hinh {
     }
 
     public long dienTich() {
-        // diem 1 diem 2 diem 3
         long s = 0;
         System.out.println(d1);
         System.out.println(d2);

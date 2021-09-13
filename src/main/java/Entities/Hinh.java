@@ -24,7 +24,7 @@ public class Hinh {
         return 0;
     }
 
-    public void nhapThongTinHinh() {
+    public void nhapThongTinDat() {
         Diem d = new Diem();
         d.nhapToaDoDiem();
         this.d = d;
@@ -63,7 +63,7 @@ public class Hinh {
             if (type.equals("chunhat")) {
                 System.out.println("Nhảy vô chữ nhật");
                 ChuNhat cn = new ChuNhat();
-                cn.nhapThongTinHinh();
+                cn.nhapThongTinDat();
                 list[i] = cn;
                 System.out.println(list[i].toString());
                 System.out.println("======================================================");
@@ -71,21 +71,21 @@ public class Hinh {
             } else if (type.equals("tron")) {
                 System.out.println("Nhảy vô tron");
                 Tron tr = new Tron();
-                tr.nhapThongTinHinh();
+                tr.nhapThongTinDat();
                 list[i] = tr;
                 System.out.println("======================================================");
 
             } else if (type.equals("vuong")) {
                 System.out.println("Nhảy vô vuông");
                 Vuong vng = new Vuong();
-                vng.nhapThongTinHinh();
+                vng.nhapThongTinDat();
                 list[i] = vng;
                 System.out.println("======================================================");
 
             } else if (type.equals("tamgiac")) {
                 System.out.println("Nhảy vô tamgiac");
                 TamGiac tg = new TamGiac();
-                tg.nhapThongTinHinh();
+                tg.nhapThongTinDat();
                 list[i] = tg;
                 System.out.println(list[i].toString());
                 System.out.println("======================================================");

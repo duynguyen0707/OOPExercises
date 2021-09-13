@@ -3,7 +3,7 @@ package Entities;
 import java.util.Scanner;
 
 public class Tron extends Hinh {
-    //private Diem tam = new Diem(0,0 );
+    private Diem tam = new Diem(0,0 );
     private int banKinh;
 
     //constructor
@@ -26,8 +26,8 @@ public class Tron extends Hinh {
     }
 
     @Override
-    public void nhapThongTinHinh() {
-        super.nhapThongTinHinh();
+    public void nhapThongTinDat() {
+        super.nhapThongTinDat();
         Scanner sc = new Scanner(System.in);
         System.out.println("Nhập bán kính hình tròn: ");
         int n = sc.nextInt();
